@@ -1,4 +1,3 @@
-
 return {
   {
     "catppuccin/nvim",
@@ -17,3 +16,4 @@ return {
     },
   },
 }
+
