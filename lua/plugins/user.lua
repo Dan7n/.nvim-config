@@ -120,4 +120,10 @@ return {
       -- refer to the configuration section below
     },
   },
+  {
+    "folke/tokyonight.nvim",
+    lazy = false,
+    priority = 1000,
+    opts = {},
+  },
 }
