@@ -29,12 +29,12 @@ return {
       end
 
       -- Open the telescope window by pressing Ctrl + e
-      vim.keymap.set("n", "<C-e>", function() toggle_telescope(harpoon:list()) end, { desc = "Open harpoon window" })
+      vim.keymap.set("n", "<C-p>", function() toggle_telescope(harpoon:list()) end, { desc = "Open harpoon window" })
 
-      -- Add current file to harpoon by pressing leader + a
-      vim.keymap.set("n", "<leader>a", function() harpoon:list():add() end)
+      -- Add current file to harpoon by pressing leader + ha (Harpoon Add)
+      vim.keymap.set("n", "<leader>ha", function() harpoon:list():add() end)
 
-      -- Remove current file from harpoon by pressing leader + hr
+      -- Remove current file from harpoon by pressing leader + hr (Harpoon Remove)
       vim.keymap.set("n", "<leader>hr", function() harpoon:list():remove() end)
     end,
   },

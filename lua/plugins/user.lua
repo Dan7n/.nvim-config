@@ -87,7 +87,7 @@ return {
           visible = true,
           show_hidden_count = true,
           hide_dotfiles = false,
-          hide_gitignored = true,
+          hide_gitignored = false,
           hide_by_name = {
             ".git",
             ".DS_Store",
@@ -125,5 +125,8 @@ return {
     lazy = false,
     priority = 1000,
     opts = {},
+  },
+  {
+    "tpope/vim-surround",
   },
 }

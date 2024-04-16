@@ -18,7 +18,12 @@ return {
   {
     "AlexvZyl/nordic.nvim",
     lazy = false,
-    -- priority = 1000,
-    -- config = function() require("nordic").load() end,
+  },
+  {
+    "nyoom-engineering/nyoom.nvim",
+  },
+  {
+    -- colorscheme: oxocarbon
+    "nyoom-engineering/oxocarbon.nvim",
   },
 }
