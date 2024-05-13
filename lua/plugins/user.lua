@@ -129,4 +129,16 @@ return {
   {
     "tpope/vim-surround",
   },
+  -- Plugin for generating code comments (JSDoc style)
+  {
+    "danymat/neogen",
+    config = true,
+    version = "*",
+    vim.api.nvim_set_keymap(
+      "n",
+      "<Leader>nf",
+      ":lua require('neogen').generate()<CR>",
+      { noremap = true, silent = true, desc = "Generate a code comment by pressing Leader+nf" }
+    ),
+  },
 }

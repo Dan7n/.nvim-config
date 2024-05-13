@@ -32,10 +32,20 @@ return {
       vim.keymap.set("n", "<C-p>", function() toggle_telescope(harpoon:list()) end, { desc = "Open harpoon window" })
 
       -- Add current file to harpoon by pressing leader + ha (Harpoon Add)
-      vim.keymap.set("n", "<leader>ha", function() harpoon:list():add() end)
+      vim.keymap.set(
+        "n",
+        "<leader>ha",
+        function() harpoon:list():add() end,
+        { desc = "Add current file to harpoon by pressing leader + ha (Harpoon Add)" }
+      )
 
       -- Remove current file from harpoon by pressing leader + hr (Harpoon Remove)
-      vim.keymap.set("n", "<leader>hr", function() harpoon:list():remove() end)
+      vim.keymap.set(
+        "n",
+        "<leader>hr",
+        function() harpoon:list():remove() end,
+        { desc = "Remove current file from harpoon by pressing leader + hr (Harpoon Remove)" }
+      )
     end,
   },
 }
